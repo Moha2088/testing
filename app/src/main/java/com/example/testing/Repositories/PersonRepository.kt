@@ -1,6 +1,6 @@
 package com.example.testing.Repositories
 
-import com.example.testing.models.Person
+import com.example.testing.Models.Person
 
 interface PersonRepository {
     suspend fun addPerson(person: Person)
@@ -29,14 +29,14 @@ class PersonRepositoryImpl : PersonRepository {
     }
 
     override suspend fun updatePerson(person: Person) {
-        TODO("Not yet implemented")
+
     }
 
     override suspend fun deletePerson(person: Person) {
-        TODO("Not yet implemented")
+
     }
 
     override suspend fun deleteAll() {
-        TODO("Not yet implemented")
+
     }
 }

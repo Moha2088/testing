@@ -1,4 +1,4 @@
-package com.example.testing.models
+package com.example.testing.Models
 
 import java.util.Date
 

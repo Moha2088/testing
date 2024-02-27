@@ -1,7 +1,7 @@
 package com.example.testing.Controllers
 
 import android.app.AlertDialog
-import com.example.testing.models.Post
+import com.example.testing.Models.Post
 import com.google.gson.Gson
 import com.google.gson.JsonParseException
 import okhttp3.Call

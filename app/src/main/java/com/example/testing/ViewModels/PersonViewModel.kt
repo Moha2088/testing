@@ -1,28 +1,26 @@
 package com.example.testing.ViewModels
 
+import androidx.lifecycle.ViewModel
+import com.example.testing.Models.Person
 import com.example.testing.Repositories.PersonRepositoryImpl
-import com.example.testing.models.Person
 import kotlinx.coroutines.runBlocking
 
-class PersonViewModel(val personRepo: PersonRepositoryImpl) {
+class PersonViewModel (val personRepo:PersonRepositoryImpl) : ViewModel(){
     init {
         getModelData()
     }
+
 
     val personList: MutableList<Person> = mutableListOf()
 
 
     fun add(person: Person) {
-        if (personList.size < 5) {
-            runBlocking {
-                personRepo.addPerson(person)
-            }
+        runBlocking {
+            personRepo.addPerson(person)
         }
-
-        else throw IllegalStateException("No more than 5 users can be added to the list")
     }
 
-    fun getModelData() {
+    private fun getModelData() {
         runBlocking {
             personRepo.getAll().forEach {
                 personList.add(it)
