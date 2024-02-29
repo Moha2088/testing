@@ -82,8 +82,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/occBox" />
+        app:layout_constraintTop_toBottomOf="@+id/occBox"
+        app:layout_constraintVertical_bias="0.504" />
 
     <TextView
         android:id="@+id/textView2"
@@ -123,4 +125,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="123dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="60dp"
+        android:text="Get Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toEndOf="@+id/addButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
